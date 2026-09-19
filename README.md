@@ -1,11 +1,11 @@
 # EC 2.0 — Easy Code
 
-A modular, executable implementation of the EC 2.0 language.
+Implementación modular y ejecutable del lenguaje EC 2.0.
 
-## Requirements
+## Requisitos
 Python 3.10+.
 
-## Execution
+## Ejecutar
 
 ```bash
 python main.py examples/01_hola.ec
@@ -18,25 +18,25 @@ REPL:
 python main.py
 ```
 
-## Features
+## Características
 
-- Variables and constants
+- Variables y constantes
 - `int`, `float`, `string`, `bool`, `list`, `null`
-- Expressions and logical operators
+- Expresiones y operadores lógicos
 - `if / else if / else`
-- `while` and `for ... in ...`
-- `break` and `continue`
-- Functions with parameters and `return`
-- Lists, indexing, and basic methods
-- Strings and `{variable}` interpolation
+- `while` y `for ... in ...`
+- `break` y `continue`
+- Funciones con parámetros y `return`
+- Listas, índices y métodos básicos
+- Strings e interpolación `{variable}`
 - `ec.print`, `ec.input`, `ec.clear`, `ec.sleep`, `ec.exit`
-- `math` library
+- Biblioteca `math`
 - `try / catch / throw`
-- AST and separate lexical environments
+- AST y entornos léxicos separados
 
-## Block Syntax
+## Sintaxis de bloques
 
-EC preserves the identity of the original version:
+EC conserva la identidad de tu versión original:
 
 ```ec
 if condicion =>:
@@ -44,7 +44,7 @@ if condicion =>:
 <==>
 ```
 
-Functions use:
+Las funciones usan:
 
 ```ec
 func sumar(a, b) =>:
@@ -52,27 +52,27 @@ func sumar(a, b) =>:
 <==>
 ```
 
-## Architecture
+## Arquitectura
 
 `source -> lexer -> tokens -> parser -> AST -> interpreter -> runtime`
 
-Version 2.0 lays the groundwork for dictionaries, classes, external modules, and bytecode.
+La versión 2.0 deja preparada la base para diccionarios, clases, módulos externos y bytecode.
 
-## `ec` Runner
+## Ejecutador `ec`
 
-### Windows (uncompiled)
+### Windows (sin compilar)
 
 ```bat
 ec.bat examples\01_hola.ec
 ```
 
-### Generating `ec.exe`
+### Generar `ec.exe`
 
-Requires PyInstaller:
+Requiere PyInstaller:
 
 ```bat
 python -m pip install pyinstaller
 build_ec.bat
 ```
 
-The output is located at `dist\\ec.exe` and uses `ec.ico` as the icon.
+El resultado queda en `dist\\ec.exe` y usa `ec.ico` como icono.

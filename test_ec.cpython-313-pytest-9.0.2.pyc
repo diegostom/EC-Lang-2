@@ -1,0 +1,14 @@
+var int edad => 21;
+var float precio => 19.95;
+var string nombre => "EC";
+var bool activo => true;
+var nada => null;
+
+const PI => 3.1415926535;
+
+ec.print(edad);
+ec.print(precio);
+ec.print(nombre.upper());
+ec.print(activo);
+ec.print(nada);
+ec.print(PI);
